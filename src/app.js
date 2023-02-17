@@ -1,3 +1,19 @@
+import { PLATFORM } from 'aurelia-pal'
+
+const routes = [
+  {
+    route: ['', 'home'],
+    name: 'home',
+    moduleId: PLATFORM.moduleName('home/home')
+  }
+]
+
 export class App {
-  message = 'Hello World!';
+  configureRouter(config, router) {
+    this.router = router;
+
+    config.title = "Your Wishlist";
+
+    config.map([...routes]);
+  }
 }

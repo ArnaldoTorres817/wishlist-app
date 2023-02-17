@@ -1,3 +1,14 @@
 <template>
-  <h1>${message}</h1>
+  <require from="bootstrap/dist/css/bootstrap.min.css"></require>
+  <require from="./global.css"></require>
+  <require from="./heading.html"></require>
+  <require from="./bottom/bottom"></require>
+
+  <div class="screen container flex">
+    <heading></heading>
+    <main class="flex-grow flex relative">
+      <router-view></router-view>
+    </main>
+    <bottom></bottom>
+  </div>
 </template>
