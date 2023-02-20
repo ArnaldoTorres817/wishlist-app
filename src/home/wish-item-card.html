@@ -1,7 +1,9 @@
-<template>
-  <div class="block panel panel-default">
+<template class="full">
+  <require from="./wish-item-card.css"></require>
+
+  <div class="wish-item-card block panel panel-default">
     <div class="panel-heading">
-      <div class="flex flex-row justify-between">
+      <div class="full flex flex-row justify-between">
         <span class="panel-title">${item.title}</span>
         <a class="btn btn-default">
           <i class="fa fa-pencil" aria-hidden="true"></i>
@@ -14,7 +16,7 @@
         Link:
         <a href="https://www.google.com" router-ignore>${item.link}</a>
       </div>
-      <div class="list-group-item">
+      <div class="tags-container list-group-item flex flex-row">
         <span>Tags:</span>
         <span repeat.for="tag of item.tags" class="label label-default">
           ${tag.name}
