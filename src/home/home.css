@@ -1,10 +1,15 @@
+.home-container {
+  gap: 1.2rem;
+}
+
 .plus {
   --size: 4em;
   width: var(--size);
   height: var(--size);
-  position: absolute;
+  position: fixed;
   bottom: 1rem;
-  right: 0;
+  right: 1.5rem;
+  z-index: 100;
 }
 
 .wish-item-cards__container {

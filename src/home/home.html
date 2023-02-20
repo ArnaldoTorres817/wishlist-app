@@ -2,15 +2,34 @@
   <require from="./home.css"></require>
   <require from="./wish-item-card"></require>
 
-  <div class="full">
-    <button type="button" class="btn btn-primary rounded-full flex center plus">
+  <div class="home-container full flex center">
+    <button
+      title="Add Wish Item"
+      type="button"
+      class="btn btn-primary rounded-full flex center plus"
+    >
       <i class="fa fa-plus font-large"></i>
     </button>
 
+    <button
+      title="Add Wish Item"
+      type="button"
+      class="btn btn-primary flex center"
+    >
+      Add a wish item
+    </button>
+
     <div class="wish-item-cards__container">
-      <wish-item-card></wish-item-card>
-      <wish-item-card></wish-item-card>
-      <wish-item-card></wish-item-card>
+      <wish-item-card item.bind="item"></wish-item-card>
+      <wish-item-card item.bind="item2"></wish-item-card>
+      <wish-item-card item.bind="item3"></wish-item-card>
+      <wish-item-card item.bind="item"></wish-item-card>
+      <wish-item-card item.bind="item2"></wish-item-card>
+      <wish-item-card item.bind="item3"></wish-item-card>
+      <wish-item-card item.bind="item3"></wish-item-card>
+      <wish-item-card item.bind="item3"></wish-item-card>
+      <wish-item-card item.bind="item3"></wish-item-card>
+      <wish-item-card item.bind="item3"></wish-item-card>
     </div>
   </div>
 </template>

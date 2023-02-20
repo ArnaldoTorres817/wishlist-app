@@ -16,8 +16,17 @@ body {
   flex-direction: column;
 }
 
+.flex-row {
+  flex-direction: row;
+  align-items: center;
+}
+
 .flex-grow {
   flex-grow: 1;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .center {

@@ -1,0 +1,8 @@
+.wish-item-card {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+}
+
+.tags-container {
+  gap: 0.6rem;
+}
