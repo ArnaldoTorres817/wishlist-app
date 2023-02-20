@@ -20,16 +20,10 @@
     </button>
 
     <div class="wish-item-cards__container">
-      <wish-item-card item.bind="item"></wish-item-card>
-      <wish-item-card item.bind="item2"></wish-item-card>
-      <wish-item-card item.bind="item3"></wish-item-card>
-      <wish-item-card item.bind="item"></wish-item-card>
-      <wish-item-card item.bind="item2"></wish-item-card>
-      <wish-item-card item.bind="item3"></wish-item-card>
-      <wish-item-card item.bind="item3"></wish-item-card>
-      <wish-item-card item.bind="item3"></wish-item-card>
-      <wish-item-card item.bind="item3"></wish-item-card>
-      <wish-item-card item.bind="item3"></wish-item-card>
+      <wish-item-card
+        repeat.for="wishItem of wishItems"
+        item.bind="wishItem"
+      ></wish-item-card>
     </div>
   </div>
 </template>

@@ -21,6 +21,8 @@ export class Home {
     tags: [{ name: "Hello" }, { name: "World" }],
   };
 
+  wishItems = [{ ...this.item }, { ...this.item2 }, { ...this.item3 }];
+
   constructor() {
     this.message = "Hello world";
   }
