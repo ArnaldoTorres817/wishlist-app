@@ -2,9 +2,11 @@
   <require from="./heading.html"></require>
   <require from="./bottom/bottom"></require>
 
-  <heading></heading>
-  <main class="flex-grow flex relative">
-    <slot></slot>
-  </main>
-  <bottom></bottom>
+  <div class="screen container flex">
+    <heading></heading>
+    <main class="flex-grow flex relative">
+      <slot></slot>
+    </main>
+    <bottom></bottom>
+  </div>
 </template>
