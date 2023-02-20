@@ -2,26 +2,23 @@
   <div class="block panel panel-default">
     <div class="panel-heading">
       <div class="flex flex-row justify-between">
-        <span class="panel-title">Hola mundo</span>
+        <span class="panel-title">${item.title}</span>
         <a class="btn btn-default">
           <i class="fa fa-pencil" aria-hidden="true"></i>
         </a>
       </div>
     </div>
-    <p class="panel-body">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    </p>
+    <p class="panel-body">${item.description}</p>
     <div class="list-group">
       <div class="list-group-item">
         Link:
-        <a href="https://www.google.com" router-ignore>
-          https://www.google.com
-        </a>
+        <a href="https://www.google.com" router-ignore>${item.link}</a>
       </div>
       <div class="list-group-item">
         <span>Tags:</span>
-        <span class="label label-default">Hello</span>
-        <span class="label label-default">World</span>
+        <span repeat.for="tag of item.tags" class="label label-default">
+          ${tag.name}
+        </span>
       </div>
     </div>
   </div>
