@@ -50,3 +50,7 @@ body {
 .relative {
   position: relative;
 }
+
+.uppercase {
+  text-transform: uppercase;
+}

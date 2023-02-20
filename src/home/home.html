@@ -3,21 +3,21 @@
   <require from="./wish-item-card"></require>
 
   <div class="home-container full flex center">
-    <button
+    <a
+      route-href="route: add-wish-item;"
       title="Add Wish Item"
-      type="button"
       class="btn btn-primary rounded-full flex center plus"
     >
       <i class="fa fa-plus font-large"></i>
-    </button>
+    </a>
 
-    <button
+    <a
+      route-href="route: add-wish-item;"
       title="Add Wish Item"
-      type="button"
       class="btn btn-primary flex center"
     >
       Add a wish item
-    </button>
+    </a>
 
     <div class="wish-item-cards__container">
       <wish-item-card
