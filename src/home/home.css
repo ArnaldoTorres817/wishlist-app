@@ -5,6 +5,7 @@
   position: absolute;
   bottom: 1rem;
   right: 0;
+  z-index: 100;
 }
 
 .wish-item-cards__container {
